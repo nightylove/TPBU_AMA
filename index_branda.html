@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TPBU AMA - Astana Mawar Asih: Konsultan dan pengelola tempat pemakaman bukan umum dengan pelayanan profesional dan humanis.">
+    <title>TPBU AMA - Astana Mawar Asih</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Placeholder untuk favicon -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fafaf6;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #44b129;
+            color: #e2e1df;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: rgba(238, 210, 50, 0.959);
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background-color: #f5f8f5;
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #000;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .cta {
+            background-color: #44b129;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta:hover {
+            background-color: #f7cf1d;
+        }
+
+        .profile, .advantages, .testimonials {
+            text-align: center;
+        }
+
+        .services, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .card, .testimonial, .item {
+            background-color: #e9e7e0;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover, .testimonial:hover, .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+       .advantages {
+            background-color: #44b129;
+            color: #fff;
+            min-height: auto;   /* INI YANG BIKIN TIDAK KEPANJANGAN */
+            padding: 2rem;      /* BIAR TETAP RAPI */
+        }
+
+
+        .advantages ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .advantages li {
+            margin: 0.5rem 0;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        footer {
+            background-color:#44b129;
+            color: #f1f1ec;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: hsl(214, 76%, 37%);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .services, .testimonials, .portfolio {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo tpbu.png" alt="TPBU AMA" loading="lazy"> <!-- Ganti dengan ID gambar logo dari link -->
+                ASTANA MAWAR ASIH
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#services">Layanan Kami</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="home" class="hero">
+        <img src="makam.png" alt="Gambar Hero - Pelayanan Pemakaman Profesional" loading="lazy"> <!-- Ganti dengan ID gambar hero dari link -->
+        <h1>Ketenangan dan Kepercayaan dalam Pelayanan Pemakaman</h1>
+        <p>TPBU AMA menyediakan konsultasi dan pengelolaan tempat pemakaman bukan umum dengan pendekatan profesional dan humanis.</p>
+        <a href="#contact" class="cta">Hubungi Kami</a>
+        <a href="#services" class="cta">Lihat Layanan</a>
+    </section>
+
+    <section class="profile">
+        <h2>Profil Singkat Perusahaan</h2>
+        <p>TPBU AMA - Astana Mawar Asih adalah lembaga konsultan dan pengelola tempat pemakaman bukan umum yang berkomitmen memberikan pelayanan tertata, amanah, dan profesional. Kami hadir untuk mendampingi keluarga, institusi, dan masyarakat dalam menghadapi momen berat dengan rasa hormat dan empati.</p>
+    </section>
+
+    <section class="services">
+        <h2>Layanan Unggulan</h2>
+        <div class="card">
+            <h3>Konsultasi Pemakaman</h3>
+            <p>Bimbingan ahli untuk perencanaan pemakaman yang sesuai dengan nilai-nilai keluarga.</p>
+        </div>
+        <div class="card">
+            <h3>Pengelolaan Lahan Pemakaman</h3>
+            <p>Penyediaan dan pengelolaan lahan pemakaman dengan standar tertinggi.</p>
+        </div>
+        <div class="card">
+            <h3>Pendampingan Administrasi</h3>
+            <p>Bantuan lengkap dalam proses administrasi pemakaman.</p>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <h2>Keunggulan Kami</h2>
+        <ul>
+            <li><strong>Pengalaman:</strong> Lebih dari 10 tahun melayani masyarakat dengan dedikasi.</li>
+            <li><strong>Legalitas:</strong> Beroperasi sesuai peraturan perundang-undangan yang berlaku.</li>
+            <li><strong>Tata Kelola Profesional:</strong> Sistem manajemen yang terstruktur dan transparan.</li>
+            <li><strong>Pendekatan Humanis:</strong> Fokus pada empati dan penghormatan terhadap keluarga.</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimoni dan Portofolio Singkat</h2>
+        <div class="testimonial">
+            <p>"TPBU AMA memberikan pelayanan yang sangat profesional dan tenang. Terima kasih atas bantuan dalam proses pemakaman ayah saya." - Keluarga S.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Pengelolaan lahan yang tertata dan legal membuat kami merasa aman. Rekomendasi penuh." - Institusi P.</p>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about">
+        <h1>Tentang Kami</h1>
+        <h2>Sejarah TPBU ASTANA MAWAR ASIH</h2>
+        <p>Dikenal sebagai "Oase Laudato Si" di Bandung Selatan, pemakaman ini menerapkan konsep ramah lingkungan dengan mempertahankan area hijau, menanam berbagai pohon menahun (seperti jati kebon, mahoni, dan ketapang), serta menggunakan rumput pinto untuk mencegah erosi di area terasering.Kapasitas dan Penggunaan: Memiliki kapasitas total sekitar 10.000 makam, namun hingga awal 2025 baru terisi sekitar 1.040 unit. Lokasi ini juga menyediakan fasilitas penyimpanan abu jenazah dalam bangunan khusus.
+        Tokoh yang Dimakamkan: Tempat ini menjadi tempat peristirahatan terakhir bagi beberapa tokoh agama Katolik, termasuk Romo Paulus Widjaja, Romo Said, Romo Paul, dan Bapak Usup.
+        Tradisi Keagamaan: Setiap tanggal 2 November, diselenggarakan Misa khusus untuk mendoakan arwah para umat yang dimakamkan di sana.
+        Pengelolaan: Pemakaman ini dikelola untuk melayani umat Katolik, khususnya dari wilayah Dekanat Selatan Bandung, meski juga menerima umat dari luar wilayah tersebut dengan ketentuan biaya yang berbeda</p>
+        <h2>Visi & Misi</h2>
+        <p><strong>Visi:</strong> Menjadi mitra terdepan dalam memberikan ketenangan dan kepercayaan melalui pelayanan pemakaman yang profesional.</p>
+        <p><strong>Misi:</strong> Menyediakan konsultasi, pengelolaan lahan, dan pendampingan administrasi dengan standar tinggi, sambil menjunjung nilai amanah, empati, dan transparansi.</p>
+        <h2>Komitmen Pelayanan</h2>
+        <p>Kami berkomitmen untuk selalu mendengarkan kebutuhan klien, memberikan solusi yang tepat, dan memastikan setiap proses berjalan lancar dengan rasa hormat maksimal.</p>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section id="services">
+        <h1>Layanan Kami</h1>
+        <div class="services">
+            <div class="card">
+                <h3>Konsultasi Pemakaman</h3>
+                <p>Kami memberikan bimbingan ahli untuk merencanakan pemakaman yang sesuai dengan tradisi dan kebutuhan keluarga.</p>
+            </div>
+            <div class="card">
+                <h3>Pengelolaan Lahan Pemakaman</h3>
+                <p>Penyediaan lahan pemakaman bukan umum yang tertata, aman, dan legal.</p>
+            </div>
+            <div class="card">
+                <h3>Pendampingan Administrasi</h3>
+                <p>Bantuan penuh dalam mengurus dokumen dan prosedur administrasi pemakaman.</p>
+            </div>
+            <div class="card">
+                <h3>Layanan Tambahan Terkait Pemakaman</h3>
+                <p>Termasuk pendampingan emosional, koordinasi acara, dan layanan pemeliharaan makam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portfolio">
+        <h1>Portofolio</h1>
+        <p>Berikut adalah dokumentasi layanan dan proyek yang telah kami tangani dengan profesionalisme tinggi.</p>
+        <div class="portfolio">
+            <div class="item">
+                <img src="ama_tpbu.png" alt="Pengelolaan Lahan untuk Keluarga T" loading="lazy"> <!-- Ganti dengan ID gambar portofolio dari link -->
+                <h3>Pengelolaan Lahan untuk Keluarga T</h3>
+                <p>Dokumentasi pengelolaan lahan pemakaman yang tertata dan legal di Jakarta.</p>
+            </div>
+              <div class="item">
+                <img src="produk_004.jpeg" alt="Konsultasi untuk Institusi P" loading="lazy"> <!-- Ganti dengan ID gambar portofolio dari link -->
+                <h3>Konsultasi untuk Institusi P</h3>
+                <p>Pendampingan konsultasi pemakaman untuk institusi dengan pendekatan humanis dan efisien.</p>
+            </div>
+              <div class="item">
+                <img src="produk_003.jpeg" alt="Konsultasi untuk Institusi P" loading="lazy"> <!-- Ganti dengan ID gambar portofolio dari link -->
+                <h3>Konsultasi untuk Institusi P</h3>
+                <p>Pendampingan konsultasi pemakaman untuk institusi dengan pendekatan humanis dan efisien.</p>
+            </div>
+            <div class="item">
+                <img src="produk_002.jpeg" alt="Konsultasi untuk Institusi P" loading="lazy"> <!-- Ganti dengan ID gambar portofolio dari link -->
+                <h3>Konsultasi untuk Institusi P</h3>
+                <p>Pendampingan konsultasi pemakaman untuk institusi dengan pendekatan humanis dan efisien.</p>
+            </div>
+            <div class="item">
+                <img src="produk_001.png" alt="Pendampingan Administrasi untuk Keluarga M" loading="lazy"> <!-- Ganti dengan ID gambar portofolio dari link -->
+                <h3>Pendampingan Administrasi untuk Keluarga M</h3>
+                <p>Bantuan lengkap dalam administrasi pemakaman, termasuk dokumen legal dan koordinasi.</p>
+            </div>
+            <div class="item">
+                <img src="dokumen_jhon.png" alt="Proyek Pemakaman Komunitas" loading="lazy"> <!-- Ganti dengan ID gambar portofolio dari link -->
+                <h3>Proyek Pemakaman Komunitas</h3>
+                <p>Pengelolaan lahan pemakaman untuk komunitas dengan standar keamanan dan kenyamanan tinggi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hubungi Kami -->
+    <section id="contact">
+        <h1>Hubungi Kami</h1>
+        <p>Kami siap membantu Anda. Hubungi kami untuk konsultasi atau informasi lebih lanjut.</p>
+        <p><strong>Alamat Lengkap:</strong> Jl.Giri Raya, Lebakwangi,Kec.Arjasari,Kab.Bandung,Jawa Barat 40379</p> 
+        <p><strong>Kontak:</strong> (021) 123-4567 | WhatsApp: +62 812-3456-7890</p> 
+        <p><strong>Email:</strong> <a href="mailto:info@tpbuama.com">info@tpbuama.com</a></p>
+        <p><strong>Media Sosial:</strong> <a href="https://facebook.com/tpbuama" target="_blank">Facebook</a> | <a href="https://instagram.com/tpbuama" target="_blank">Instagram</a></p>
+        <p></p>
+    </section>
+
+    <footer>
+        <p>Alamat: Jl. Giri Raya, Lebakwangi, Kec. Arjasari, Kabupaten Bandung, Jawa Barat 40379<br>Kontak: (021) 123-4567 | WhatsApp: +62 812-3456-7890 | Email: <a href="mailto:info@tpbuama.com">info@tpbuama.com</a><br>Media Sosial: <a href="https://facebook.com/tpbuama" target="_blank">Facebook</a> | <a href="https://instagram.com/tpbuama" target="_blank">Instagram</a></p>
+        <p>&copy; 2023 TPBU AMA - Astana Mawar Asih
